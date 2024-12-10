@@ -1,21 +1,150 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet">
-    <title>Название сайта</title>
-    
+    <meta name="description" content="Магазин мягких вязаных игрушек из плюшевой пряжи ">
+    <meta name="keywords" content="Вязаные игрушки, мягкие игрушки, игрушки крючком, handmade игрушки,осьминог перевертыш, игрушка осьминог, игрушка пчела, игрушка авокадо, игрушка пингвин">
+    <meta name="author" content="Alina Shablyko">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="Фавикон.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title> Shablyko.toys </Shablyko>
+    </title>
 </head>
+
 <body>
-    <div class="header">
-        <div class="logo">Логотип</div>
-        <div class="nav">
-            <a href="#">Главная</a>
-            <a href="#">О нас</a>
-            <a href="#">Услуги</a>
-            <a href="#">Контакты</a>
+
+    <header>
+        <div class="header-container">
+            <div class="logo"><img src=logo5.png alt="Shablyko.toys"></div>
+            <div class="buttons">
+                <button> Игрушки </button>
+                <button> Где можно купить </button>
+                <button> Акции </button>
+            </div>
+        </div>
+    </header>
+    <div class="toys1">
+        <div class="slider1">
+            <h2>Осьминог перевертыш</h2>
+            <img src="img4.JPG" alt="Осьминог перевертыш" class="active">
+            <img src="img3.JPG" alt="Осьминог перевертыш">
+            <div class="slider1-buttons">
+                <button onclick="prev1Slide()"> Прошлая </button>
+                <button onclick="next1Slide()"> Следующая </button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="block1">
+                <img src="img1.JPG" alt="Осьминог перевертыш">
+                <img src="img2.JPG" alt="Осьминог перевертыш">
+                <img src="img5.JPG" alt="Осьминог перевертыш">
+            </div>
+            <div class="block2">
+                <img src="img4.JPG" alt="Осьминог перевертыш">
+                <img src="img3.JPG" alt="Осьминог перевертыш">
+            </div>
         </div>
     </div>
+
+
+
+    <div class="other-toys">
+        <div class="slider2">
+            <h2>Осьминог</h2>
+            <img src="img7.JPG" alt="Осьминог" class="active">
+            <img src="img6.JPG" alt="Осьминог">
+            <div class="slider2-buttons">
+                <button onclick="prev2Slide()"> Прошлая </button>
+                <button onclick="next2Slide()"> Следующая </button>
+            </div>
+        </div>
+        <div class="slider3">
+            <h2>Пчела</h2>
+            <img src="img8.JPG" alt="Пчела" class="active">
+            <img src="img9.JPG" alt="Пчела">
+            <div class="slider2-buttons">
+                <button onclick="prev3Slide()"> Прошлая </button>
+                <button onclick="next3Slide()"> Следующая </button>
+            </div>
+        </div>
+        <div class="block3">
+            <h2> Авокадо</h2>
+            <img src="img10.JPG" alt="Авокадо">
+            <h2> Пингвин</h2>
+            <img src="img11.JPG" alt="Пингвин">
+        </div>
+    </div>
+
+    <footer>
+      <p>  &copy; Alina Shablyko </p> 
+      <div class="social-icons">
+          <a href="https://www.facebook.com/yourprofile" target="_blank">
+            <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://www.twitter.com/yourprofile" target="_blank">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.instagram.com/yourprofile" target="_blank">
+            <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+    </footer>
+
+    <script>
+        let currentSlide1 = 0;
+        const slides1 = document.querySelectorAll('.slider1 img');
+
+        function showSlide1(index) {
+            slides1[currentSlide1].classList.remove('active');
+            currentSlide1 = (index + slides1.length) % slides1.length;
+            slides1[currentSlide1].classList.add('active');
+        }
+
+        function next1Slide() {
+            showSlide1(currentSlide1 + 1);
+        }
+        function prev1Slide() {
+            showSlide1(currentSlide1 - 1);
+        }
+    </script>
+    <script>
+        let currentSlide2 = 0;
+        const slides2 = document.querySelectorAll('.slider2 img');
+
+        function showSlide2(index) {
+            slides2[currentSlide2].classList.remove('active');
+            currentSlide2 = (index + slides2.length) % slides2.length;
+            slides2[currentSlide2].classList.add('active');
+        }
+
+        function next2Slide() {
+            showSlide2(currentSlide2 + 1);
+        }
+        function prev2Slide() {
+            showSlide2(currentSlide2 - 1);
+        }
+    </script>
+    <script>
+        let currentSlide3 = 0;
+        const slides3 = document.querySelectorAll('.slider3 img');
+
+        function showSlide3(index) {
+            slides3[currentSlide3].classList.remove('active');
+            currentSlide3 = (index + slides3.length) % slides3.length;
+            slides3[currentSlide3].classList.add('active');
+        }
+
+        function next3Slide() {
+            showSlide3(currentSlide3 + 1);
+        }
+        function prev3Slide() {
+            showSlide3(currentSlide3 - 1);
+        }
+    </script>
+
 </body>
+
 </html>
