@@ -3,31 +3,26 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #7C07A9;
     text-align: center;
 }
-
 /* Шапка */
 header {
     margin-bottom: 5px;
 }
-
 .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #AC66D5;
 }
-
 .buttons {
     display: flex;
     margin-bottom: 5px;
     gap: 10px;
 }
-
 .buttons button {
     border: none;
     padding: 10px 20px;
@@ -53,30 +48,23 @@ header {
 }
 .slider1 {
     position: relative;
-    margin-left: 10px;
-    margin-right: auto;
-    margin-top: 10px;
-    margin-bottom: auto;
+    margin: 10px auto auto 10px;
     width: 65%;
 }
-
 .slider1 img {
     width: 100%;
     border-radius: 10px;
     display: none;
 }
-
 .slider1 img.active {
     display: block;
 }
-
 .slider1-buttons {
     display: flex;
     justify-content: center;
     gap: 10px;
     margin-top: 10px;
 }
-
 .slider1-buttons button {
     background-color: #5E2580;
     color: aliceblue;
@@ -85,11 +73,9 @@ header {
     cursor: pointer;
     border-radius: 5px;
 }
-
 .slider1-buttons button:hover {
     background-color: #47036F;
 }
-
 /* картинки 1 игрушки */
 .container {
     display: grid;
@@ -98,18 +84,15 @@ header {
     width: 60%;
     margin: 0 auto;
 }
-
 .container .block1, .container .block2 {
     flex-direction: column;
     display: flex;
     align-items: center;
 }
-
 .container .block1 img {
     margin: 15px;
     width: 85%;
 }
-
 .container .block2 img {
     margin: 15px;
     width: 90%;
@@ -132,26 +115,21 @@ header {
     margin-right: auto;
     margin-top: 5px;
     margin-bottom: auto;
-    width: 35%;
 }
-
 .slider2 img {
     width: 100%;
     border-radius: 10px;
     display: none;
 }
-
 .slider2 img.active {
     display: block;
 }
-
 .slider2-buttons {
     display: flex;
     justify-content: center;
     gap: 10px;
     margin-top: 10px;
 }
-
 .slider2-buttons button {
     background-color: #5E2580;
     color: aliceblue;
@@ -160,7 +138,6 @@ header {
     cursor: pointer;
     border-radius: 5px;
 }
-
 .slider2-buttons button:hover {
     background-color:#47036F;
 }
@@ -171,26 +148,21 @@ header {
     margin-right: auto;
     margin-top: 5px;
     margin-bottom: auto;
-    width: 35%;
 }
-
 .slider3 img {
     width: 100%;
     border-radius: 10px;
     display: none;
 }
-
 .slider3 img.active {
     display: block;
 }
-
 .slider3-buttons {
     display: flex;
     justify-content: center;
     gap: 10px;
     margin-top: 10px;
 }
-
 .slider3-buttons button {
     background-color: #5E2580;
     color: aliceblue;
@@ -199,21 +171,17 @@ header {
     cursor: pointer;
     border-radius: 5px;
 }
-
 .slider3-buttons button:hover {
     background-color: #47036F;
 }
 /* игрушки 4 и 5 */
 .other-toys .block3 {
- width: 30% ;
  margin-top: 15px;
 }
-
 .other-toys .block3 img {
-    width: 50%;
     margin: 10px;
+    width: 40%;
    }
-
    /* ссылки на соц.сети */
 footer  {
     display: flex;
@@ -237,8 +205,6 @@ footer a{
 footer a:hover{
     color: #47036F;
 }
-
-
 /* Адаптивные стили  */
 @media (max-width: 768px) {
     .header-container {
@@ -253,15 +219,13 @@ footer a:hover{
     .slider1, .slider2, .slider3 {
         width: 100%;
     }
-    .other-toys .block3 img {
-        width: 100%;
+    .other-toys .block3 {
+        width: 1px;
         display: flex;
     }
     .container {
         width: 100%;
     }
-}
-@media (max-width: 480px) {
     .buttons button {
         padding: 8px 16px;
         font-size: 0.9rem;
@@ -285,10 +249,6 @@ footer a:hover{
     .other-toys .block3  {
         flex-direction: column;
         align-items: center;
-       width: 100px;
-    }
-
-    .other-toys .block3 img {
-        width: 100%;
+       width: 100%;
     }
 }
