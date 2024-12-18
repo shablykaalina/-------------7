@@ -111,10 +111,7 @@ header {
 /* игрушка 2 */
 .slider2 {
     position: relative;
-    margin-left: 10px;
-    margin-right: auto;
-    margin-top: 5px;
-    margin-bottom: auto;
+    margin: 5px auto auto 10px;
 }
 .slider2 img {
     width: 100%;
@@ -144,10 +141,7 @@ header {
 /* Игрушка 3 */
 .slider3 {
     position: relative;
-    margin-left: 5px;
-    margin-right: auto;
-    margin-top: 5px;
-    margin-bottom: auto;
+    margin: 5px auto auto 10px;
 }
 .slider3 img {
     width: 100%;
